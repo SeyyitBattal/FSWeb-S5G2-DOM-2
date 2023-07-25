@@ -35,3 +35,21 @@ gidelimFoto.addEventListener("WheelEvent", (e) => {
 window.addEventListener("load", (event) => {
   console.log("Page is fully loaded", event);
 });
+
+const rota = document.querySelector(".content-destination h2");
+rota.addEventListener("dblclick", (e) => {
+  alert("Çift tıkladınız", e);
+});
+
+const altButon1 = document.querySelector(".btn");
+altButon1.addEventListener("mouseover", (event) => {
+  event.target.style.color = "black";
+  event.target.style.backgroundColor = "green";
+
+  setTimeout(() => {
+    event.target.style.color = "";
+    event.target.style.backgroundColor = "";
+  }, 500);
+});
+
+// HAFTA SONU DEVAM EDECEĞİM
